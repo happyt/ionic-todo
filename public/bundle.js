@@ -21479,7 +21479,7 @@
 	        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 
 	        _this.state = {
-	            version: "0.04",
+	            version: "0.05",
 	            tabList: tabList,
 	            currentTab: 1
 	        };
