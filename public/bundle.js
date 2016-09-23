@@ -21479,6 +21479,7 @@
 	        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 
 	        _this.state = {
+	            version: "0.04",
 	            tabList: tabList,
 	            currentTab: 1
 	        };
@@ -21516,7 +21517,8 @@
 	                    _react2.default.createElement(
 	                        'span',
 	                        { className: 'version' },
-	                        'v0.03'
+	                        'v',
+	                        this.state.version
 	                    ),
 	                    _react2.default.createElement(Content, {
 	                        currentTab: this.state.currentTab
