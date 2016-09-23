@@ -21682,13 +21682,13 @@
 	                    this.sendCommand(this.props.baseUrl + "ResetMainCounter");
 	                    break;
 	                case "POLL BUG":
-	                    this.sendCommand(this.props.baseUrl + "ShowCounter");
+	                    this.sendCommand(this.props.baseUrl + "ToggleAnimValue/pollbug");
 	                    break;
 	                case "VIDI":
-	                    this.sendCommand(this.props.baseUrl + "ShowVidi");
+	                    this.sendCommand(this.props.baseUrl + "ToggleAnimValue/vidi");
 	                    break;
 	                case "COUNTER":
-	                    this.sendCommand(this.props.baseUrl + "ShowCounter");
+	                    this.sendCommand(this.props.baseUrl + "ToggleAnimValue/counter");
 	                    break;
 	                case "LT + POLL BUG":
 	                    this.sendCommand(this.props.baseUrl + "HideCounter");
