@@ -1,0 +1,138 @@
+@font-face {
+    font-family: skyReg;
+    src: url('./SkyTextRegular/sky_reg-webfont.eot') format('eot'),
+         url('./SkyTextRegular/sky_reg-webfont.woff') format('woff'),
+         url('./SkyTextRegular/sky_reg-webfont.ttf') format('ttf'),
+         url('./SkyTextRegular/sky_reg-webfont.svg') format('svg');
+}
+
+html{
+    font-family: skyReg;
+}
+
+body{
+    margin:20px;
+}
+
+.header-image {
+    background-image:  url(./news.png);
+}
+
+.pure-menu-link {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: .5em 1.5em;
+        color: white;
+    background-color: #6699ff;
+    border: 1px solid #bbbbbb;
+    border-bottom: none;    
+}    
+.pure-menu-link:hover, .pure-menu-link:focus {
+    color: white;
+    background: #6699ee;
+}
+.pure-menu-selected .pure-menu-link {
+    background-color: white;
+    color: dodgerBlue;            
+}
+
+.pure-button-success,
+.pure-button-error,
+.pure-button-warning,
+.pure-button-secondary,
+.pure-button-tertiary,
+.pure-button-control 
+ {
+    color: black;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border: solid #444444 1px;
+}
+.pure-button-success {
+    background: rgb(152,251,152); /* this is a pale green */
+}
+.pure-button-error {
+    color: white;
+    background: rgb(220,20,60); /* this is a crimson red */
+}
+.pure-button-warning {
+    background: rgb(255,255,0); /* this is an yellow */
+}
+.pure-button-secondary {
+    background: rgb(175,238,238); /* this is a pale turquoise */
+}
+.pure-button-tertiary {
+    background: rgb(175,238,238); /* this is a pale turquoise */
+}
+.pure-button-control {
+    background: #315edd;
+    color: white;
+    width: 10em;
+}
+
+/*Basic Grid Styles*/
+
+.grid-overall {
+    display: flex;
+    flex-flow: column; 
+    justify-content: space-between;
+    height: 320px;
+}
+
+.grid-row {
+  display: flex;
+  flex-flow: row; 
+  justify-content: space-between;
+}
+.grid-cell {
+  flex: 1;
+  padding: 5px;
+}
+
+.mypanel {
+    overflow:hidden;
+    padding: 0.5em;      /* Room for close button. */
+    padding-right: 20px; /* Room for Close button */
+    height: 60px;       /* For the close button */
+    color: #0e1320;
+
+    border-radius: 7px 7px 7px 7px;
+    border-color: #0102ff;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.mypanel-title {
+    border-radius: 7px 7px 0 0;
+    padding: 0.5em;
+    color: white;
+    background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(32,87,145,1) 100%);
+    background-color: #b0bcdd;
+}
+
+.mypanel-body {
+    padding: 1.5em;
+    border-radius: 0 0 7px 7px;
+    background: -webkit-linear-gradient(rgba(218,228,237,1) 0%, rgba(104,154,204,1) 100%);
+    background: -o-linear-gradient(rgba(218,228,237,1) 0%, rgba(104,154,204,1) 100%);
+    background: linear-gradient(rgba(218,228,237,1) 0%, rgba(104,154,204,1) 100%);
+    background-color: #b0bcdd;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  transform: scale(2);
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 6px;
+  padding-left: 1em;
+}
+
+
+.move-over {
+    margin-right: 3em;
+    margin-left: 1em;
+}
