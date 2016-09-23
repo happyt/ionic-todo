@@ -21505,7 +21505,6 @@
 	                    _react2.default.createElement('img', { className: 'header-image' }),
 	                    'US Election'
 	                ),
-	                ' v0.1',
 	                _react2.default.createElement(
 	                    'div',
 	                    null,
@@ -21514,6 +21513,11 @@
 	                        tabList: this.state.tabList,
 	                        changeTab: this.changeTab
 	                    }),
+	                    _react2.default.createElement(
+	                        'span',
+	                        { className: 'version' },
+	                        'v0.03'
+	                    ),
 	                    _react2.default.createElement(Content, {
 	                        currentTab: this.state.currentTab
 	                    })
