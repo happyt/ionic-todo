@@ -21505,6 +21505,7 @@
 	                    _react2.default.createElement('img', { className: 'header-image' }),
 	                    'US Election'
 	                ),
+	                ' v0.1',
 	                _react2.default.createElement(
 	                    'div',
 	                    null,
@@ -21715,15 +21716,16 @@
 	        value: function sendCommand(url) {
 	            var _this2 = this;
 
+	            this.setState({ displayText: "..." }); // clear reply area
 	            fetch(url, { method: "GET" }).then(function (response) {
 	                return response.json();
 	            }).then(function (responseData) {
 	                //        console.log("B>>>",this.state.displayText,"<");
-	                //         debugger;
-	                if (responseData[0].name) {
-	                    _this2.setState({ displayText: responseData[0].username });
+	                //      debugger;
+	                if (responseData) {
+	                    _this2.setState({ displayText: "OK" });
 	                } else {
-	                    _this2.setState({ displayText: "Unknown name" });
+	                    _this2.setState({ displayText: "Incorrect reply" });
 	                }
 	                //          console.log("A>>>",this.state.displayText,"<");
 	            }).catch(function (error) {
