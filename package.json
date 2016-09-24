@@ -1,6 +1,6 @@
 {
   "name": "uselection",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "US Election test at Sky",
   "main": "server.js",
   "scripts": {
