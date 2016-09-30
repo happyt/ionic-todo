@@ -39,7 +39,6 @@ app.get("/neverno", function(req, res) {
                   errorReply.datafield = "Not valid JSON";
                   res.status(200).json(JSON.stringify(errorReply))
               }
-           
         }
     });
 });
