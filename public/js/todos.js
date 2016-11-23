@@ -20,21 +20,6 @@ angular.module('todos', ['firebase'])
     //             "title":"testing 1",
     //             "finished": false,
     //             "$id": 1
-    //         },
-    //         {
-    //             "title":"testing 2",
-    //             "finished": true,
-    //             "$id": 2
-    //         },
-    //         {
-    //             "title":"testing 3",
-    //             "finished": false,
-    //             "$id": 3
-    //         },
-    //         {
-    //             "title":"testing 4",
-    //             "finished": false,
-    //             "$id": 4
     //         }
     //     ];
     var ref = firebase.database().ref().child('todos');
