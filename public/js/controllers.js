@@ -12,18 +12,19 @@ function ($scope, $stateParams, Todos, $ionicModal) {
    }
    
    $scope.modal = $ionicModal.fromTemplate(
-       "<ion-modal-view>" +
+        "<ion-modal-view>" +
             "<ion-header-bar class='bar-balanaced'>" +
                 "<h1 class='title'>Add item</h1>" +
                 "<button class='button button-clear' ng-click='closeModal()'>Close</button>" +
             "</ion-header-bar>" +
             "<ion-content class='padding'>" +
-                "<label class='item item-input'>" + 
+                "<label class='item item-input'>" +
                     "<input type='text' placeholder='Title' ng-model='data.title' />" +
                 "</label>" +
                 "<button class='button button-balanced button-block' ng-click='addItem()'>Submit</button>" +
             "</ion-content>" +
-        "</ion-modal-view>", {
+        "</ion-modal-view>",
+        {
             scope:$scope,
             animation: 'slide-in-up'
         })
@@ -69,5 +70,22 @@ function ($scope, $stateParams, Todos) {
       }
   }
   
+  // create a destroy function
+  $scope.removeItem = function() {
+      alert("Item deleted!");
+      Todos.items.$remove($scope.item); 
+   //   $location.path('todos');
+   //   $ionicViewSwitcher.nextDirection('back'); 
+  //    $state.go('todos');
+  };
+  
+}])
+   
+.controller('modalAddCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+// You can include any angular dependencies as parameters for this function
+// TIP: Access Route Parameters for your page via $stateParams.parameterName
+function ($scope, $stateParams) {
+
+
 }])
  

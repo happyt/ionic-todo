@@ -66,6 +66,12 @@ angular.module('app.routes', ['ionicUIRouter'])
     }
   })
 
+  .state('modalAdd', {
+    url: '/page6',
+    templateUrl: 'templates/modalAdd.html',
+    controller: 'modalAddCtrl'
+  })
+
 $urlRouterProvider.otherwise('/todos/todos')
 
   
