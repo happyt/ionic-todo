@@ -1,0 +1,9 @@
+<ion-view title="Todo item" id="page5" style="background-color:#BFC8F3;">
+  <ion-content padding="true" class="has-header">
+    <div id="todoItem-markdown1" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">{{item.title}}</p>
+    </div>
+    <button id="todoItem-button2" ng-click="toggleFinished()" ng-show="item.finished==true" class="button button-assertive  button-block icon-left ion-alert-circled">Still unfinished</button>
+    <button id="todoItem-button3" ng-click="toggleFinished()" ng-show="item.finished==false" class="button button-balanced  button-block icon-left ion-checkmark-circled">Item finished</button>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,13 @@
+<ion-view title="Todos" id="page2" ng-repeat="item in items">
+  <ion-content padding="true" class=" manual-remove-top-padding has-header">
+    <ion-list id="todos-list1" class="manual-list-fullwidth">
+      <ion-item class="item-icon-left" id="todos-list-item1" ui-sref="tabsController.todoItem({&quot;item&quot;:&quot;&quot;+item.$id+&quot;&quot;})" ng-repeat="item in items" ng-show="item.finished == false">
+        <i class="icon ion-android-checkbox-outline-blank"></i>{{item.title}}
+        <ion-option-button class="button-positive"></ion-option-button>
+      </ion-item>
+    </ion-list>
+    <div style="margin-right:-20px;">
+      <button id="todos-button1" ng-click="showModal()" style="left:-10px;" class="button button-balanced  button-full button-outline">Add item</button>
+    </div>
+  </ion-content>
+</ion-view>

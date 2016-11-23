@@ -1,7 +1,7 @@
 {
-  "name": "uselection",
+  "name": "controller",
   "version": "0.2.2-1",
-  "description": "US Election test at Sky",
+  "description": "Test ionic at Sky",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
